@@ -39,3 +39,9 @@ The arduino uses the SPI serial protocol to talk to the potentiometer and set th
 ## Photos
 
 Some photos of the device is provided bellow, as well as some measurements to show the capability of the device of setting an maintaining a target current flow (within the limits of the hardware design: the wiper resistance is 75 Ohms and the minimum short-circuit current is 0.5mA).
+
+<img src=/photos/tdcs.jpg?raw=true height=320/>
+<img src=/photos/inside.jpg?raw=true height=320/>
+
+<img src=/photos/measure1.jpg?raw=true width=400/>
+<img src=/photos/measure2.jpg?raw=true width=400/>

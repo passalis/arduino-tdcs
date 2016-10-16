@@ -8,27 +8,26 @@ Transcranial Direct Current Stimulation using arduino
 ## Introduction
 [Transcranial Direct Current Stimulation](https://en.wikipedia.org/wiki/Transcranial_direct-current_stimulation) is a neurostimulation technique used by neuroscientists to stimulate specific parts of the brain using electrodes placed on the scalp. A small amount of current, i.e., < 2mA, flows from the electrodes throught the brain. Limited evidence suggests that this technique might be usefull for treating various psychiatric disorders, such as depression.
 
-The purpose of this project is to provide the software needed to perform tDCS using an arduino board, a digital potentiometer and some extra hardware. The arduino is controlled through a PC allowing to set a specific target current and monitoring the device. Then, the arduino constantly adjusts the potentiometer to keep the current within the specfic limit. 
+The purpose of this project is to provide the software needed to perform tDCS with DIY hardware (using an arduino board, a digital potentiometer and some extra parts). The arduino is controlled through a PC allowing to set a specific target current and monitoring the device. Then, the arduino constantly adjusts the potentiometer to keep the current within the specfic limit. 
 
-**This is weekend project (build in less than 24 hours) and it has not been thoroughly tested. It is provided with the hope that it will be use useful for any other scientist interested in building and testing a cheap tDCS device. The parts costs (not including the arduino) is less than 5$.**
+**This is weekend project (build in less than 24 hours) and it has not been thoroughly tested. It is provided with the hope that it will be use useful for any other scientist interested in building and testing a cheap tDCS device. The parts' cost (not including the arduino) is less than 5$.**
 
 ## Structure
 
-The *arduino* folder  contains the code used in the arduino board (an arduino diecimila was used). The *python* folder  contains a) the code used for talking to arduino using its serial port  and b) the GUI that is used to control the arduino. 
+The *arduino* folder  contains the code used for programming the arduino board (an arduino Diecimila was used). The *python* folder  contains a) the interface to talk to the arduino using its serial port  and b) the GUI used to control the arduino. 
 
-The program runs by executing the gui.py and it was tested under Linux. Ensure that the program have read/write permissions to the serial port.
+The program runs by executing the *gui.py* and it was tested under Linux. Ensure that the program has read/write permissions to the serial port.
 
 ## Capabilities
 The program is capable of:
 
-1. Monitoring the current flowing throught the electrodes and the skin resistance
-2. Setting a target current and constantly adjusting the potentiometer to keep it within the target
+1. Monitoring the current flowing through the electrodes and the skin resistance
+2. Setting a target current and constantly adjusting the potentiometer to keep it within the target range
 3. Soft-starting and soft-stoping the tDCS procedure to reduce phosphenes and irritations
-4. Protecting from short-circuits
 
 ## Hardware
 
-The following hardware is used:
+The following hardware was used:
 
 1. Arduino Diecimila
 2. 10k Digital Potentiometer (MCP4151)
@@ -38,7 +37,7 @@ The arduino uses the SPI serial protocol to talk to the potentiometer and set th
 
 ## Photos
 
-Some photos of the device is provided bellow, as well as some measurements to show the capability of the device of setting an maintaining a target current flow (within the limits of the hardware design: the wiper resistance is 75 Ohms and the minimum short-circuit current is 0.5mA).
+Some photos of the device are provided bellow, as well as some measurements to show the capability of the device to set and maintain a target current flow (within the limits of the hardware design: the wiper resistance is 75 Ohms and the minimum short-circuit current is 0.5mA).
 
 <img src=/photos/tdcs.jpg?raw=true height=320/>
 <img src=/photos/inside.jpg?raw=true height=320/>

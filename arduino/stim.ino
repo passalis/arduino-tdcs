@@ -10,8 +10,8 @@ using namespace icecave::arduino;
 #define TDCS_LED_PIN 4
 #define ON_LED_PIN 3
 
-const double extra_R = 3; 
-const double R_W = 70 + extra_R; // Min potentiometer resistance
+const double extra_R = 0; 
+const double R_W = 75 + extra_R; // Min potentiometer resistance
 const double R_S = 10000/256; // Potentiometer step
 
 

@@ -32,7 +32,7 @@ class TDCS_Connection:
         else:
             return False
 
-    def start_tdcs(self, smooth=False):
+    def start_tdcs(self, smooth=True):
         """
         Starts the tdcs procedure
         :param smooth:

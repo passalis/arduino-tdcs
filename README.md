@@ -5,12 +5,15 @@ Transcranial Direct Current Stimulation using arduino
 
 **The code is provided in the hope that it will be useful for *neuroscientists, doctors, e.t.c.,* but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. Before using the code be sure that you understand that [tDCS is dangerous](https://www.eurekalert.org/pub_releases/2016-07/bidm-nwa070816.php) and *experts advise strongly against using it* without proper training.**
 
+
 ## Introduction
 [Transcranial Direct Current Stimulation](https://en.wikipedia.org/wiki/Transcranial_direct-current_stimulation) is a neurostimulation technique used by neuroscientists to stimulate specific parts of the brain using electrodes placed on the scalp. A small amount of current, i.e., < 2mA, flows from the electrodes throught the brain. Limited evidence suggests that this technique might be usefull for treating various psychiatric disorders, such as depression.
 
 The purpose of this project is to provide the software needed to perform tDCS with DIY hardware (using an arduino board, a digital potentiometer and some extra parts). The arduino is controlled through a PC allowing to set a specific target current and monitoring the device. Then, the arduino constantly adjusts the potentiometer to keep the current within the specfic limit. 
 
 **This is weekend project (build in less than 24 hours) and it has not been thoroughly tested. It is provided with the hope that it will be use useful for any other scientist interested in building and testing a cheap tDCS device. The parts' cost (not including the arduino) is less than 5$.**
+
+Also, check my [website](http://users.auth.gr/passalis) for more projects and stuff!
 
 ## Structure
 
@@ -39,8 +42,9 @@ The arduino uses the SPI serial protocol to talk to the potentiometer and set th
 
 Some photos of the device are provided bellow, as well as some measurements to show the capability of the device to set and maintain a target current flow (within the limits of the hardware design: the wiper resistance is 75 Ohms and the minimum short-circuit current is 0.5mA).
 
-<img src=/photos/tdcs.jpg?raw=true height=320/>
-<img src=/photos/inside.jpg?raw=true height=320/>
+![alt An image!](/photos/tdcs.jpg?raw=true)
+![alt An image!](/photos/inside.jpg?raw=true)
+![alt An image!](/photos/measure1.jpg?raw=true)
+![alt An image!](/photos/measure2.jpg?raw=true)
 
-<img src=/photos/measure1.jpg?raw=true width=400/>
-<img src=/photos/measure2.jpg?raw=true width=400/>
+
